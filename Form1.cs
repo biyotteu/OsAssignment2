@@ -12,6 +12,8 @@ namespace OsAssignment2
 {
     public partial class Form1 : Form
     {
+        public List<Process> processes = new List<Process>();
+        
         public Form1()
         {
             InitializeComponent();
@@ -36,6 +38,12 @@ namespace OsAssignment2
             }
             chart1.Series[0].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
             comboBox1.SelectedIndex = 0;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ProcessList newProcessList = new ProcessList();
+            newProcessList.ShowDialog();
         }
     }
 }
