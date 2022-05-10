@@ -30,6 +30,7 @@ namespace OsAssignment2
                 listView1.Columns[i].Width = (listView1.Width - 3) / listView1.Columns.Count;
                 listView1.Columns[i].TextAlign = HorizontalAlignment.Center;
             }
+            render();
         }
 
         private void button1_Click(object sender, EventArgs e)

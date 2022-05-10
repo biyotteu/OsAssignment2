@@ -12,4 +12,9 @@ namespace OsAssignment2
         public int arrivalTime, burstTime, priority, num;
         public Color color;
     }
+
+    public class Result
+    {
+        public int num, waitTime, completeTime;
+    }
 }
