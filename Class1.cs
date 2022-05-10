@@ -9,7 +9,7 @@ namespace OsAssignment2
 {
     public class Process
     {
-        public int arrivalTime, burstTime, priority;
+        public int arrivalTime, burstTime, priority, num;
         public Color color;
     }
 }

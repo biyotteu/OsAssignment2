@@ -31,20 +31,20 @@ namespace OsAssignment2
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button1 = new System.Windows.Forms.Button();
-            this.AddButton = new System.Windows.Forms.Button();
-            this.EditButton = new System.Windows.Forms.Button();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.DeleteButton = new System.Windows.Forms.Button();
+            this.EditButton = new System.Windows.Forms.Button();
+            this.AddButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -67,7 +67,7 @@ namespace OsAssignment2
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.listView1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.listView1, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -80,28 +80,9 @@ namespace OsAssignment2
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1070, 653);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel2.Controls.Add(this.DeleteButton, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.EditButton, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.AddButton, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 3, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1064, 59);
-            this.tableLayoutPanel2.TabIndex = 0;
-            // 
             // listView1
             // 
-            this.listView1.Alignment = System.Windows.Forms.ListViewAlignment.SnapToGrid;
+            this.listView1.AutoArrange = false;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
@@ -113,6 +94,7 @@ namespace OsAssignment2
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(5, 70);
             this.listView1.Margin = new System.Windows.Forms.Padding(5);
+            this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1060, 512);
             this.listView1.TabIndex = 1;
@@ -140,18 +122,50 @@ namespace OsAssignment2
             // columnHeader5
             // 
             this.columnHeader5.Text = "Color";
-            this.columnHeader5.Width = 464;
+            this.columnHeader5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // tableLayoutPanel2
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Location = new System.Drawing.Point(435, 590);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 60);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "OK";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.tableLayoutPanel2.ColumnCount = 4;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
+            this.tableLayoutPanel2.Controls.Add(this.DeleteButton, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.EditButton, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.AddButton, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 3, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1064, 59);
+            this.tableLayoutPanel2.TabIndex = 0;
+            // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DeleteButton.Location = new System.Drawing.Point(434, 10);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(10);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(192, 39);
+            this.DeleteButton.TabIndex = 2;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
+            // EditButton
+            // 
+            this.EditButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.EditButton.Location = new System.Drawing.Point(222, 10);
+            this.EditButton.Margin = new System.Windows.Forms.Padding(10);
+            this.EditButton.Name = "EditButton";
+            this.EditButton.Size = new System.Drawing.Size(192, 39);
+            this.EditButton.TabIndex = 1;
+            this.EditButton.Text = "Edit";
+            this.EditButton.UseVisualStyleBackColor = true;
+            this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
             // 
             // AddButton
             // 
@@ -164,28 +178,6 @@ namespace OsAssignment2
             this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = true;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
-            // 
-            // EditButton
-            // 
-            this.EditButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditButton.Location = new System.Drawing.Point(222, 10);
-            this.EditButton.Margin = new System.Windows.Forms.Padding(10);
-            this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(192, 39);
-            this.EditButton.TabIndex = 1;
-            this.EditButton.Text = "Edit";
-            this.EditButton.UseVisualStyleBackColor = true;
-            // 
-            // DeleteButton
-            // 
-            this.DeleteButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DeleteButton.Location = new System.Drawing.Point(434, 10);
-            this.DeleteButton.Margin = new System.Windows.Forms.Padding(10);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(192, 39);
-            this.DeleteButton.TabIndex = 2;
-            this.DeleteButton.Text = "Delete";
-            this.DeleteButton.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel3
             // 
@@ -220,6 +212,18 @@ namespace OsAssignment2
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(205, 34);
             this.textBox1.TabIndex = 1;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button1.Location = new System.Drawing.Point(435, 590);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(200, 60);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "OK";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ProcessList
             // 
@@ -244,11 +248,6 @@ namespace OsAssignment2
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button EditButton;
@@ -257,5 +256,10 @@ namespace OsAssignment2
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

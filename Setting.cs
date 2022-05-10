@@ -13,9 +13,16 @@ namespace OsAssignment2
     public partial class Setting : Form
     {
         public Process process = new Process();
-        public Setting()
+        public Setting(Process cur)
         {
             InitializeComponent();
+            if (cur != null)
+            {
+                process = cur;
+                ArrivalTime.Value = cur.arrivalTime;
+                BurstTime.Value = cur.burstTime;
+                Priority.Value = cur.priority;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -76,7 +76,7 @@
             this.tableLayoutPanel1.Controls.Add(this.processBox, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
@@ -90,7 +90,7 @@
             this.ouputBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ouputBox.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ouputBox.Location = new System.Drawing.Point(5, 699);
-            this.ouputBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ouputBox.Margin = new System.Windows.Forms.Padding(5);
             this.ouputBox.Name = "ouputBox";
             this.ouputBox.Padding = new System.Windows.Forms.Padding(16, 18, 16, 18);
             this.ouputBox.Size = new System.Drawing.Size(1066, 1032);
@@ -106,7 +106,7 @@
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel5, 0, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(16, 49);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
@@ -122,7 +122,7 @@
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(5, 5);
-            this.chart1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.chart1.Margin = new System.Windows.Forms.Padding(5);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -147,11 +147,11 @@
             this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(5, 584);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 364F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 376F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(1024, 376);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
@@ -164,7 +164,7 @@
             this.listView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(5, 5);
-            this.listView2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.listView2.Margin = new System.Windows.Forms.Padding(5);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(604, 366);
             this.listView2.TabIndex = 2;
@@ -192,7 +192,7 @@
             this.tableLayoutPanel6.Controls.Add(this.ATT, 0, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(619, 5);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -232,7 +232,7 @@
             this.processBox.Location = new System.Drawing.Point(16, 18);
             this.processBox.Margin = new System.Windows.Forms.Padding(16, 18, 16, 18);
             this.processBox.Name = "processBox";
-            this.processBox.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.processBox.Padding = new System.Windows.Forms.Padding(5);
             this.processBox.Size = new System.Drawing.Size(1044, 658);
             this.processBox.TabIndex = 0;
             this.processBox.TabStop = false;
@@ -246,7 +246,7 @@
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel4, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(5, 36);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
@@ -268,7 +268,7 @@
             this.listView1.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(5, 97);
-            this.listView1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.listView1.Margin = new System.Windows.Forms.Padding(5);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(1024, 515);
             this.listView1.TabIndex = 0;
@@ -312,11 +312,11 @@
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.tableLayoutPanel4.Location = new System.Drawing.Point(5, 5);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(5);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 79F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 82F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1024, 82);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
@@ -344,7 +344,7 @@
             "Priority Scheduling",
             "Round Robin"});
             this.comboBox1.Location = new System.Drawing.Point(414, 26);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(5);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(295, 29);
             this.comboBox1.TabIndex = 1;
@@ -373,6 +373,7 @@
             this.button2.TabIndex = 0;
             this.button2.Text = "Run";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
@@ -380,7 +381,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1076, 1736);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
