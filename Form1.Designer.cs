@@ -90,7 +90,7 @@
             this.ouputBox.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ouputBox.Location = new System.Drawing.Point(3, 399);
             this.ouputBox.Name = "ouputBox";
-            this.ouputBox.Padding = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.ouputBox.Padding = new System.Windows.Forms.Padding(10);
             this.ouputBox.Size = new System.Drawing.Size(679, 590);
             this.ouputBox.TabIndex = 0;
             this.ouputBox.TabStop = false;
@@ -113,6 +113,7 @@
             // 
             // chart1
             // 
+            chartArea2.AxisX.IsReversed = true;
             chartArea2.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -122,7 +123,9 @@
             this.chart1.Name = "chart1";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series2.IsVisibleInLegend = false;
             series2.Legend = "Legend1";
+            series2.MarkerSize = 4;
             series2.Name = "Series1";
             series2.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
             series2.YValuesPerPoint = 4;
@@ -131,7 +134,7 @@
             this.chart1.TabIndex = 1;
             this.chart1.Text = "title";
             title2.BorderColor = System.Drawing.Color.Transparent;
-            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             title2.Name = "processingTime";
             title2.Text = "Processing Time";
             this.chart1.Titles.Add(title2);
@@ -149,7 +152,7 @@
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 218F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 215F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(653, 215);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
@@ -228,7 +231,7 @@
             this.processBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.processBox.Font = new System.Drawing.Font("굴림", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.processBox.Location = new System.Drawing.Point(10, 10);
-            this.processBox.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.processBox.Margin = new System.Windows.Forms.Padding(10);
             this.processBox.Name = "processBox";
             this.processBox.Size = new System.Drawing.Size(665, 376);
             this.processBox.TabIndex = 0;
@@ -310,7 +313,7 @@
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 46F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(653, 46);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
@@ -374,7 +377,7 @@
             this.ClientSize = new System.Drawing.Size(685, 992);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Scheduling";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ouputBox.ResumeLayout(false);
